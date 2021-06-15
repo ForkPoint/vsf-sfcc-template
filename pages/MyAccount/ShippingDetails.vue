@@ -13,7 +13,7 @@
           {{ $t('Contact details updated') }}
         </p>
 
-        <ShippingAddressForm
+        <AddressForm
           :address="activeAddress"
           :isNew="isNewAddress"
           @submit="saveAddress" />
@@ -36,7 +36,7 @@
             class="shipping">
             <div class="shipping__content">
               <div class="shipping__address">
-                <UserShippingAddress :address="address" />
+                <UserAddress :address="address" />
               </div>
             </div>
             <div class="shipping__actions">
@@ -80,8 +80,8 @@ import {
   SfButton,
   SfIcon
 } from '@storefront-ui/vue';
-import UserShippingAddress from '~/components/UserShippingAddress';
-import ShippingAddressForm from '~/components/MyAccount/ShippingAddressForm';
+import UserAddress from '~/components/UserAddress';
+import AddressForm from '~/components/MyAccount/AddressForm';
 import { useUserShipping, userShippingGetters } from '@vue-storefront/sfcc';
 import { ref, computed } from '@vue/composition-api';
 import { onSSR } from '@vue-storefront/core';
@@ -92,8 +92,8 @@ export default {
     SfTabs,
     SfButton,
     SfIcon,
-    UserShippingAddress,
-    ShippingAddressForm
+    UserAddress,
+    AddressForm
   },
   setup() {
     const { shipping, load: loadUserShipping, addAddress, deleteAddress, updateAddress } = useUserShipping();

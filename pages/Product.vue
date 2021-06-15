@@ -65,7 +65,7 @@
               {{size.label}}
             </SfSelectOption>
           </SfSelect>
-          <div v-if="options.color && options.color.length > 1" class="product__colors desktop-only">
+          <div v-if="options.color && options.color.length > 0" class="product__colors desktop-only">
             <p class="product__color-label">{{ $t('Color') }}:</p>
             <SfColor
               data-cy="product-color_update"
@@ -229,7 +229,10 @@ export default {
         path: context.root.$route.path,
         query: {
           ...configuration.value,
-          ...filter
+          ...Object.entries(filter).reduce((acc, [key, attr]) => ({
+            ...acc,
+            [key]: attr.value || attr
+          }), {})
         }
       });
     };

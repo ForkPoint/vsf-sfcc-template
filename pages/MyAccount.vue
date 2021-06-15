@@ -16,12 +16,8 @@
           <MyProfile />
         </SfContentPage>
 
-        <SfContentPage data-cy="my-account-page_shipping-details" title="Shipping details">
+        <SfContentPage data-cy="my-account-page_address-details" title="Address details">
           <ShippingDetails />
-        </SfContentPage>
-
-        <SfContentPage data-cy="my-account-page_billing-details" title="Billing details">
-          <BillingDetails />
         </SfContentPage>
 
         <SfContentPage data-cy="my-account-page_loyalty-card" title="Loyalty card">
@@ -53,7 +49,6 @@ import { computed } from '@vue/composition-api';
 import { useUser } from '@vue-storefront/sfcc';
 import MyProfile from './MyAccount/MyProfile';
 import ShippingDetails from './MyAccount/ShippingDetails';
-import BillingDetails from './MyAccount/BillingDetails';
 import LoyaltyCard from './MyAccount/LoyaltyCard';
 import MyNewsletter from './MyAccount/MyNewsletter';
 import OrderHistory from './MyAccount/OrderHistory';
@@ -66,7 +61,6 @@ export default {
     SfContentPages,
     MyProfile,
     ShippingDetails,
-    BillingDetails,
     LoyaltyCard,
     MyNewsletter,
     OrderHistory,
