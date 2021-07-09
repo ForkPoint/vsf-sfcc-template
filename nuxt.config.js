@@ -69,6 +69,8 @@ export default {
       { code: 'en' },
       { code: 'de' }
     ],
+    currency: 'USD',
+    country: 'US',
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
@@ -78,6 +80,14 @@ export default {
         },
         de: {
           welcome: 'Welcome 2'
+        }
+      },
+      numberFormats: {
+        en: {
+          currency: {
+            style: 'currency',
+            currency: 'USD'
+          }
         }
       }
     }

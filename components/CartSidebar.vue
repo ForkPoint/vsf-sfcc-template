@@ -1,6 +1,7 @@
 <template>
   <div id="cart">
     <SfSidebar
+      v-e2e="'sidebar-cart'"
       :visible="isCartSidebarOpen"
       title="My Cart"
       class="sf-sidebar--right"
@@ -19,7 +20,6 @@
           <div class="collected-product-list">
             <transition-group name="sf-fade" tag="div">
               <SfCollectedProduct
-                data-cy="collected-product-cart-sidebar"
                 v-for="product in products"
                 :key="cartGetters.getItemSku(product)"
                 :image="cartGetters.getItemImage(product)"
@@ -67,15 +67,19 @@
         <transition name="sf-fade">
           <div v-if="totalItems">
             <SfProperty
-              name="Total price"
+              name="Subtotal price"
               class="sf-property--full-width sf-property--large my-cart__total-price"
             >
               <template #value>
-                <SfPrice :regular="$n(totals.subtotal, 'currency')" />
+                <SfPrice
+                  :regular="$n(totals.subtotal, 'currency')"
+                  :special="(totals.special !== totals.subtotal) ? $n(totals.special, 'currency') : 0"
+                />
               </template>
             </SfProperty>
             <nuxt-link to="/checkout/shipping">
               <SfButton
+                v-e2e="'go-to-checkout-btn'"
                 class="sf-button--full-width color-secondary"
                 @click="toggleCartSidebar"
               >

@@ -2453,7 +2453,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@vue-storefront/core@^2.3.0-rc.3":
+"@vue-storefront/core@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@vue-storefront/core/-/core-2.3.4.tgz#e59f92cb1cc0aab9c5cb92ebb09db8cdee9d7b3e"
   integrity sha512-68XDnVnDsVrfP4J4VnJZbeawa/Hj7zNgysQDW8X21ouILmhfgmUb5pJ0uYqaVVIiFNQdzMeEjK4BN9zAPaSGNQ==
@@ -2465,7 +2465,7 @@
     lodash-es "^4.17.15"
     vue "^2.6.11"
 
-"@vue-storefront/middleware@^2.3.0-rc.3":
+"@vue-storefront/middleware@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@vue-storefront/middleware/-/middleware-2.3.4.tgz#3752d24a22a38a52e7d47ebcd990d4199a0f2244"
   integrity sha512-/8sSCWgTi6vtwGIWtzmP4HBpb7Zg3I6Au11tcQe0BHqff/knQor5UaxQN12JEveCHc1/PWplZE0dGjbnWvPIFw==
@@ -2475,7 +2475,7 @@
     cors "^2.8.5"
     express "^4.17.1"
 
-"@vue-storefront/nuxt-theme@^2.3.0-rc.3":
+"@vue-storefront/nuxt-theme@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@vue-storefront/nuxt-theme/-/nuxt-theme-2.3.4.tgz#25f0e943609612c6b4fdae406b2304a803fa3855"
   integrity sha512-UgZVnuoy7BtXShXPFqri+3TlEas6Td6OS51hug64oQt0965ZmmtzHF0KbLy1jBl50bOyWZdtZc9Qzmfv5HKTSw==
@@ -2485,7 +2485,7 @@
     lodash.merge "^4.6.2"
     vue-lazy-hydration "^2.0.0-beta.4"
 
-"@vue-storefront/nuxt@^2.3.0-rc.3":
+"@vue-storefront/nuxt@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@vue-storefront/nuxt/-/nuxt-2.3.4.tgz#dd7ffde90753b0ff5bbe517d3499f6d615c705d4"
   integrity sha512-TbxZGViDmUjz3Cw8urABEprWxeAFmwe4kDN92drwJKM86hThlxumPyjvMs5Ng0SOtFcueI3wqVJA3Nx0vNbY5w==
@@ -2500,26 +2500,26 @@
     lodash "^4.17.15"
     nuxt-purgecss "^1.0.0"
 
-"@vue-storefront/sfcc-api@^1.0.0-beta.7":
-  version "1.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc-api/-/sfcc-api-1.0.0-beta.7.tgz#3c29fcad842babecfbf3185b90694d5c27e9abda"
-  integrity sha512-OpCWB/606NJTGdRGpqZrzuHaD9Hi0XX1bFoCGbZbpYfS93q8moTkCMwxG7Jj/BGzXBBryv0jML/gIelNytWsHw==
+"@vue-storefront/sfcc-api@^1.0.0-beta.8":
+  version "1.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc-api/-/sfcc-api-1.0.0-beta.8.tgz#87a783a608434b5efc6fee4c63555d16b4efea80"
+  integrity sha512-AxCrEYiYkuBpjehurXUa66vbpvbMR47N8pC9jmcnNqXkKh+Sf6SJthlcJN1gmv+CbOm2AGAFtRTi5JXMkWk95Q==
   dependencies:
     "@commerce-apps/core" "^1.5.2"
-    "@vue-storefront/core" "^2.3.0-rc.3"
+    "@vue-storefront/core" "^2.3.4"
     axios "^0.21.1"
     camelcase-keys "~6.1.2"
     commerce-sdk "^2.4.0"
     commercecloud-ocapi-client "^0.2.0"
     js-base64 "^3.6.0"
 
-"@vue-storefront/sfcc@^1.0.0-beta.7":
-  version "1.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc/-/sfcc-1.0.0-beta.7.tgz#e9c2050321a8afc7ce2a53cd629bebca844cf331"
-  integrity sha512-el88YF6byCKFth5GooRvaWPoDkqIn8MEoUrXddxPH7tReb6FoY9LVv/4wrR7rhij3aceITCLDUSpITDr2GL1wQ==
+"@vue-storefront/sfcc@^1.0.0-beta.8":
+  version "1.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc/-/sfcc-1.0.0-beta.8.tgz#c0d1249aed42a8177129492b13dc117ecadee03d"
+  integrity sha512-a3J2dWV5XmCj1KtPuA8elW33wYSF6MyGTpGr0J+ZXZacWG4vX5IkXOFDWgSGdI/9L8cGyN6TIX5m5BPrTZBAdA==
   dependencies:
-    "@vue-storefront/core" "^2.3.0-rc.3"
-    "@vue-storefront/sfcc-api" "^1.0.0-beta.7"
+    "@vue-storefront/core" "^2.3.4"
+    "@vue-storefront/sfcc-api" "^1.0.0-beta.8"
     set-cookie-parser "^2.4.7"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
@@ -11480,9 +11480,9 @@ snyk-try-require@^2.0.0:
     lru-cache "^5.1.1"
 
 snyk@^1.459.0, snyk@^1.522.0:
-  version "1.657.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.657.0.tgz#cf08456069a77e564ee38d2790ccbc71e593867d"
-  integrity sha512-wTJ5k49SopXL9Sm8Ltlp+HVVpakpaxkt//IRzOTEN75CMd/NpLtCSD34oAbUfo+tTrN1Ig8MSXGk5Z3XQm2d7w==
+  version "1.658.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.658.0.tgz#c92f522110f333d78c68f2c8df9fbb05a925883c"
+  integrity sha512-h39A1Y14Rr14o6Xfk78KwyLiuVGLCjpMwZQoK/6jNvaTPJAaxPG68HHuzjBJ5/j43w7AB8KBfqyf08+NKAIETA==
   dependencies:
     "@open-policy-agent/opa-wasm" "^1.2.0"
     "@snyk/cli-interface" "2.11.0"
