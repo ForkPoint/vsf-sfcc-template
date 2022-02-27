@@ -2148,10 +2148,10 @@
     lodash "^4.17.15"
     nuxt-purgecss "^1.0.0"
 
-"@vue-storefront/sfcc-api@^1.0.0-beta.11":
-  version "1.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc-api/-/sfcc-api-1.0.0-beta.11.tgz#1721ae5fb55bef53b2113f1122a6bbbcfd89ff93"
-  integrity sha512-gPJOkB4o6CD5RdZYe4MNxaPWntW3Pf9dCyyLLIn86TRkeqAig4neVOzldJL7Liu1NrTkH+HQqet6pYqyYk47ig==
+"@vue-storefront/sfcc-api@^1.0.0-beta.13":
+  version "1.0.0-beta.13"
+  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc-api/-/sfcc-api-1.0.0-beta.13.tgz#b5635a3a00ef14fc8c04fbd3aea88fa0b3d49c37"
+  integrity sha512-nY8FOSfFELxIK/Cet7wyiIE0Zob+K/DP1T7vylEaeSTPuS4JqdqV+iIbRzjtdwzAtiH3mnLSN8TDlAfwx/FnnQ==
   dependencies:
     "@commerce-apps/core" "^1.5.2"
     "@vue-storefront/core" "^2.3.4"
@@ -2161,13 +2161,13 @@
     commercecloud-ocapi-client "^0.2.0"
     js-base64 "^3.6.0"
 
-"@vue-storefront/sfcc@^1.0.0-beta.11":
-  version "1.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc/-/sfcc-1.0.0-beta.11.tgz#2d9024076fe26ed644b32ff3a4037b5a482f5508"
-  integrity sha512-rsnRjL8uhg/tlwssByUSWxz24brtPsGWErzz7CeWbhkyGGg8hW5T9XMdHycvR+Rc00teqjCRxk6pvMn0Zlapvg==
+"@vue-storefront/sfcc@^1.0.0-beta.13":
+  version "1.0.0-beta.13"
+  resolved "https://registry.yarnpkg.com/@vue-storefront/sfcc/-/sfcc-1.0.0-beta.13.tgz#4594f8a21bdac3c7a02673503eb13d7c626d601f"
+  integrity sha512-x6Q+9MOWMRX2LO1oBhNgglCpsv7juRPtCZ/iRh2HY7fYLFp/7VRybvpD6nRpsBPz9estaUPXZAlAWnTr6HmBPw==
   dependencies:
     "@vue-storefront/core" "^2.3.4"
-    "@vue-storefront/sfcc-api" "^1.0.0-beta.11"
+    "@vue-storefront/sfcc-api" "^1.0.0-beta.13"
     set-cookie-parser "^2.4.7"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
